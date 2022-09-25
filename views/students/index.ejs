@@ -1,0 +1,36 @@
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <a href="/student/create" class="btn btn-primary mb-3">Create Student</a>
+            <a href="/student/Unverified" class="btn btn-danger mb-3">Unverified Student</a>
+            <div class="row">
+                <% students.reverse().forEach((student, index)=> { %>
+                    <div class="col-md-4">
+                        <div class="card shadow-lg">
+                            <div class="card-body">
+                                <div class="user-info">
+                                    <% if (student.photo=='avatar.png' ) { %>
+                                        <img class="dataTable-img" src="/images/<%= student.photo %> " alt="">
+                                        <% } else { %>
+                                            <img class="dataTable-img" src="/images/student/<%= student.photo %> "
+                                                alt="">
+                                            <% } %>
+
+                                                <h2>
+                                                    <%= student.name %>
+                                                </h2>
+                                                <h5>
+                                                    <%= student.cell %>
+                                                </h5>
+                                                <hr>
+                                                <a class="btn btn-info btn-sm"
+                                                    href="/student/show/<%= student.id %> ">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+</div>

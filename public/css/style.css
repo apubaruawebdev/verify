@@ -1,0 +1,37 @@
+.dataTable-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: top;
+}
+.imageIcon {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  cursor: pointer;
+}
+#student_photo {
+  display: none;
+}
+.preloadImage {
+  width: 100%;
+}
+.student-details img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+.user-info {
+  text-align: center;
+}
+.user-info img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}

@@ -1,0 +1,31 @@
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <a href="/student" class="btn btn-primary mb-3">Back</a>
+            <div class="card shadow">
+                <div class="card-header text-center">
+                    <h2>Show <%= showSingleData.name %>'s Information</h2>
+                </div>
+                <div class="card-body">
+                    <div class="student-details text-center">
+                        <% if (showSingleData.photo=='avatar.png' ) { %>
+                            <img src="/images/<%= showSingleData.photo %> " alt="">
+                            <% } else { %>
+                                <img src="/images/student/<%= showSingleData.photo %> " alt="">
+                                <% } %>
+                                    <hr>
+                                    <h2>
+                                        <%= showSingleData.name %>
+                                    </h2>
+                                    <p><strong>Email:</strong>
+                                        <%= showSingleData.email %>
+                                    </p>
+                                    <p><strong>Phone:</strong>
+                                        <%= showSingleData.cell %>
+                                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
